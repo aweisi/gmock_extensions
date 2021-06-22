@@ -7,5 +7,3 @@ project(example_tests_projects)
 unittest_project()
 
 add_cxx_test(NAME example_tests)
-
-
