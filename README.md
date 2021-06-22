@@ -1,3 +1,5 @@
+[![CMake](https://github.com/aweisi/gmock_extensions/actions/workflows/cmake.yml/badge.svg)](https://github.com/aweisi/gmock_extensions/actions/workflows/cmake.yml)
+
 # gmock_extensions
 support mocking free functions without boilerplate code
 
