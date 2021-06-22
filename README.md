@@ -10,7 +10,7 @@ support mocking free functions without boilerplate code
 `cmake -E chdir <./path/to/build> ctest –C Release`  
 
 example:  
-- `cmake -DBUILD_TESTING=1 -DCMAKE_BUILD_TYPE=Release -S .\examples\ -B ./build`  
+- `cmake -DBUILD_TESTING=1 -DCMAKE_BUILD_TYPE=Release -S ./examples -B ./build`  
 - `cmake --build ./build --config Release`  
 - `cmake -E chdir ./build ctest –C Release`  
 # examples
