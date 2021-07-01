@@ -21,10 +21,10 @@ example:
    - MOCK_FUNCTION  
         | position | name             |details
         |:---      |:---              |:---
-        | 1st      | ReturnType       | int or (std::pair<int,bool>) optional parentheses if type contains comma
-        | 2nd      | FunctionName     | myFunctionName
-        | 3rd      | Arguments        | (int, char *, uint16_t t) require parentheses
-        | 4th      | Specs [OPTIONAL] | (noexcept) require parentheses if present
+        | 1st      | ReturnType       | return type parentheses are optional if type contains comma e.g.: (std::pair<int,bool>)
+        | 2nd      | FunctionName     | function name 
+        | 3rd      | Arguments        | Arguments types require parentheses e.g.: **(int, char *, uint16_t t)**
+        | 4th      | Specs [OPTIONAL] | function spec require parentheses if present e.g.: **(noexcept)** 
 
      **Generate** the type `[FunctionName]_MOCK_TYPE` with the following static member functions:  
      - `[FunctionName]_MOCK_TYPE::create()` create naggy mock object
@@ -34,10 +34,10 @@ example:
         | position | name             |details
         |:---      |:---              |---
         | 1st      | overloadId       | integer used as reference for particulare overload
-        | 2nd      | ReturnType       | int optional parentheses if type contains comma e.g.: or (std::pair<int,bool>)
-        | 3rd      | FunctionName     | myFunctionName
-        | 4th      | Arguments        | (int, char *, uint16_t t) require parentheses
-        | 5th      | Specs [OPTIONAL] | (noexcept) require parentheses if present
+        | 2nd      | ReturnType       | return type parentheses are optional if type contains comma e.g.: (std::pair<int,bool>)
+        | 3rd      | FunctionName     | function name 
+        | 4th      | Arguments        | Arguments types require parentheses e.g.: **(int, char *, uint16_t t)**
+        | 5th      | Specs [OPTIONAL] | function spec require parentheses if present e.g.: **(noexcept)** 
 
      **Generate** the type `[FunctionName]_MOCK_TYPE[overloadId]` with the following static member functions:  
      - `[FunctionName]_MOCK_TYPE[overloadId]::create()` create naggy mock object
