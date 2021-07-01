@@ -34,7 +34,7 @@ example:
         | position | name             |details
         |:---      |:---              |---
         | 1st      | overloadId       | integer used as reference for particulare overload
-        | 2nd      | ReturnType       | int or (std::pair<int,bool>) optional parentheses if type contains comma
+        | 2nd      | ReturnType       | int optional parentheses if type contains comma e.g.: or (std::pair<int,bool>)
         | 3rd      | FunctionName     | myFunctionName
         | 4th      | Arguments        | (int, char *, uint16_t t) require parentheses
         | 5th      | Specs [OPTIONAL] | (noexcept) require parentheses if present
