@@ -23,8 +23,8 @@ example:
         |:---      |:---              |:---
         | 1st      | ReturnType       | return type parentheses are optional if type contains comma e.g.: (std::pair<int,bool>)
         | 2nd      | FunctionName     | function name 
-        | 3rd      | Arguments        | Arguments types require parentheses e.g.: **(int, char *, uint16_t t)**
-        | 4th      | Specs [OPTIONAL] | function spec require parentheses if present e.g.: **(noexcept)** 
+        | 3rd      | Arguments        | Arguments types require parentheses e.g.: (int, char *, uint16_t t)
+        | 4th      | Specs [OPTIONAL] | function spec require parentheses if present e.g.: (noexcept)
 
      **Generate** the type `[FunctionName]_MOCK_TYPE` with the following static member functions:  
      - `[FunctionName]_MOCK_TYPE::create()` create naggy mock object
@@ -36,8 +36,8 @@ example:
         | 1st      | overloadId       | integer used as reference for particulare overload
         | 2nd      | ReturnType       | return type parentheses are optional if type contains comma e.g.: (std::pair<int,bool>)
         | 3rd      | FunctionName     | function name 
-        | 4th      | Arguments        | Arguments types require parentheses e.g.: **(int, char *, uint16_t t)**
-        | 5th      | Specs [OPTIONAL] | function spec require parentheses if present e.g.: **(noexcept)** 
+        | 4th      | Arguments        | Arguments types require parentheses e.g.: (int, char *, uint16_t t)
+        | 5th      | Specs [OPTIONAL] | function spec require parentheses if present e.g.: (noexcept)
 
      **Generate** the type `[FunctionName]_MOCK_TYPE[overloadId]` with the following static member functions:  
      - `[FunctionName]_MOCK_TYPE[overloadId]::create()` create naggy mock object
